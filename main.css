@@ -215,7 +215,7 @@ nav button:hover {
  background: rgb(255, 255, 255);
  height: 38px;
  position: absolute;
- width: 5px;
+ width: 3px;
  top: 350px;
  left: 370px;
  border-radius: 2px;
@@ -224,7 +224,7 @@ nav button:hover {
 .plus:after {
  background: rgb(255, 255, 255);
  content: "";
- height: 5px;
+ height: 3px;
  left: -17px;
  position: absolute;
  top: 16px;
@@ -235,71 +235,43 @@ nav button:hover {
 .triangle-1 {
  position: absolute;
  width: 27px;
- height: 53px;
- left: -89px;
+ height: 47px;
+ left: -95px;
  right: 0px;
  top: 350px;
- border-left: 3.65476px solid #e7e7e7;
+ border-left: 3px solid #e7e7e7;
 }
-
-.triangle-1:before {
- content: "";
+.triangle-1::after {
  position: absolute;
- width: 53px;
- height: -9.42px;
- left: -7px;
- right: -2px;
- top: 38px;
- border-top: 3.65476px solid #e7e7e7;
- transform: rotate(-32deg);
-}
-
-.triangle-1:after {
  content: "";
- position: absolute;
- width: 50px;
- height: 32.58px;
- left: 1px;
- right: -8px;
- top: -16px;
- border-bottom: 3.65476px solid #e7e7e7;
- transform: rotate(30deg);
+ border-top: 3px solid white;
+ border-right: 3px solid white;
+ height: 40px;
+ width: 41px;
+ transform: rotate(33deg) skew(-20deg);
+ left: -21px;
+ top: 3px;
 }
 
 .triangle-2 {
  position: absolute;
  width: 27px;
- height: 53px;
- left: -83px;
- right: 0px;
- top: 371px;
- border-left: 1.65476px solid #e7e7e7;
- border-radius: 2px;
- transform: rotate();
-}
-
-.triangle-2::before {
- content: "";
- position: absolute;
- width: 51px;
- height: -12.42px;
- left: -5px;
- right: -2px;
- top: 39px;
- border-top: 1.65476px solid #e7e7e7;
- transform: rotate(-30deg);
+ height: 46px;
+ left: -85px;
+ top: 370px;
+ border-left: 3px solid #0e0a0a;
 }
 
 .triangle-2::after {
- content: "";
  position: absolute;
- width: 52px;
- height: 26.58px;
- left: 2px;
- right: -8px;
- top: -11px;
- border-bottom: 1.65476px solid #e7e7e7;
- transform: rotate(30deg);
+ content: "";
+ border-top: 2px solid white;
+ border-right: 2px solid white;
+ height: 40px;
+ width: 41px;
+ transform: rotate(33deg) skew(-20deg);
+ left: -22px;
+ top: 3px;
 }
 
 /*  */
@@ -412,16 +384,6 @@ nav button:hover {
   top: 110px;
  }
 
- .triangle-3 {
-  position: absolute;
-  width: 27px;
-  height: 53px;
-  left: 35px;
-  right: 0px;
-  top: -87px;
-  border-left: 3.65476px solid #e7e7e7;
-  border-radius: 2px;
- }
  .feature-section-title {
   flex-direction: column;
  }
@@ -432,5 +394,8 @@ nav button:hover {
   flex-direction: column;
   margin: 1em 0;
   padding: 0;
+ }
+ .feature-section {
+  padding-top: 7rem;
  }
 }
