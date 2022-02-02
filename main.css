@@ -536,6 +536,27 @@ nav button:hover {
  border-radius: 10px;
  cursor: pointer;
 }
+.btn-1 {
+ height: 6px;
+ width: 4px;
+ background-color: #5454d4;
+ border-radius: 3px;
+}
+.btn-2 {
+ height: 6px;
+ width: 1px;
+ background-color: #131314;
+ border-radius: 3px;
+}
+.btn-3 {
+ height: 6px;
+ width: 1px;
+ background-color: #131314;
+ border-radius: 3px;
+}
+.btn-container {
+ position: relative;
+}
 /* media Query */
 
 @media screen and (max-width: 768px) {
