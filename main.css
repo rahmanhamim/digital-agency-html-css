@@ -2,6 +2,7 @@
 body {
  font-family: "Nunito Sans", sans-serif;
  color: #fff;
+ background-color: #1a1a24;
 }
 h1,
 h2 {
@@ -714,18 +715,7 @@ footer {
   margin: 1em 0;
   padding: 0;
  }
- .banner-image::before {
-  content: "";
-  position: absolute;
-  top: 65px;
-  left: 50px;
-  width: 65%;
-  height: 65%;
-  border: 2px solid white;
-  z-index: 1;
-  border-radius: 14px;
-  transform: rotate(23deg);
- }
+
  .feature-section {
   padding-top: 10rem;
  }
