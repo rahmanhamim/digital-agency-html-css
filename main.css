@@ -145,8 +145,8 @@ nav button:hover {
  width: 250px;
  border: 2px solid #fff;
  border-radius: 14px;
- top: 55px;
- left: 5px;
+ top: 60px;
+ left: 20px;
  transform: rotate(23deg);
 }
 
@@ -708,6 +708,10 @@ footer {
   flex-direction: column;
   margin: 1em 0;
   padding: 0;
+ }
+ .banner-image::before {
+  top: 60px;
+  left: 35px;
  }
 
  .feature-section {
