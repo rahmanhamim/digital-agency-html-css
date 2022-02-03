@@ -90,6 +90,7 @@ nav button:hover {
 /* banner section */
 .banner-section {
  padding-top: 3rem;
+ padding-bottom: 5rem;
 }
 .slogan {
  font-size: 3.5rem;
@@ -97,18 +98,17 @@ nav button:hover {
 .banner-text {
  font-size: 1.2rem;
 }
-
 .banner-image {
  position: relative;
+ display: block;
 }
-
 .person {
- margin-top: 30px;
-}
-
-.banner-image img {
- z-index: 2;
  position: relative;
+ min-height: 500px;
+}
+.banner-image img {
+ position: absolute;
+ z-index: 5;
  clip-path: polygon(
   45% 0%,
   84% 12%,
@@ -121,33 +121,32 @@ nav button:hover {
   12% 32%,
   19% 10%
  );
- display: block;
-}
-
-.banner-image::before {
- content: "";
- position: absolute;
- top: 75px;
- left: 21px;
- width: 65%;
- height: 65%;
- border: 2px solid white;
- z-index: 1;
- border-radius: 14px;
- transform: rotate(23deg);
+ max-width: 300px;
 }
 
 .banner-image::after {
  content: "";
  position: absolute;
- top: 119px;
- left: 45px;
- width: 63%;
- height: 66%;
- border: 2px solid white;
  z-index: 1;
+ width: 250px;
+ height: 250px;
+ top: 111px;
+ left: 44px;
  border-radius: 14px;
  background-color: #5454d4;
+ transform: rotate(23deg);
+ border: 2px solid white;
+}
+.banner-image::before {
+ content: "";
+ position: absolute;
+ z-index: 1;
+ height: 250px;
+ width: 250px;
+ border: 2px solid #fff;
+ border-radius: 14px;
+ top: 55px;
+ left: 5px;
  transform: rotate(23deg);
 }
 
@@ -218,7 +217,7 @@ nav button:hover {
  position: absolute;
  width: 3px;
  top: 350px;
- left: 370px;
+ right: 0px;
  border-radius: 2px;
 }
 
@@ -678,11 +677,11 @@ footer {
   top: 450px;
  }
 
- .person {
+ /* .person {
   width: 70%;
   margin-left: 60px;
   margin-top: 100px;
- }
+ } */
 
  .zigzag {
   left: 50px;
@@ -697,11 +696,6 @@ footer {
  .triangle-2 {
   left: 37px;
   top: 440px;
- }
-
- .banner-image::after {
-  left: 83px;
-  top: 110px;
  }
 
  .feature-section-title {
